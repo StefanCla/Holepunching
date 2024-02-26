@@ -1,6 +1,9 @@
 #include <cstdio>
+#include "UDP.hpp"
 
 int main()
 {
-	std::printf("Hello World!\n");
+	UDPHolepunch* Holepunch = new UDPHolepunch();
+
+	delete Holepunch;
 }
