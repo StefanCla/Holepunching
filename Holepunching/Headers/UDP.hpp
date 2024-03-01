@@ -8,11 +8,13 @@ public:
 	UDPHolepunch();
 	~UDPHolepunch();
 
-	void Receive();
-	void Send();
+	bool ConnectToServer();
+	bool Receive();
+	bool Send();
 
 private:
 	bool Initialize();
+	bool ConnectToSocket();
 
 private:
 	WSADATA* m_WsaData;
